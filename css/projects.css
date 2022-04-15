@@ -31,10 +31,12 @@ ul li {
 }
 
 nav {
+    font-size: 1.3rem;
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
-    background: #333;
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
     height: 60px;
 }
 
@@ -44,8 +46,19 @@ nav {
 }
 
 h2 {
+    font-size: 2rem;
     text-align: center;
     margin: 2rem 0;
+    color: #2b5876;
+}
+
+h2::after {
+    content: '';
+    width: 120px;
+    height: 7px;
+    background: #04befe;
+    display: block;
+    margin: .1rem auto;
 }
 
 .cards {
@@ -56,14 +69,60 @@ h2 {
 }
 
 .card {
+    cursor: pointer;
     width: 350px;
     height: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     background: #333;
     color: #fff;
+    font-size: 3rem;
     border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: all .4s ease-in-out;
 }
+
+.card:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+.card.one {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.card.two {
+    background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+    box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+}
+
+.card.three {
+    background-image: linear-gradient(to right, #fc6076, #ff9a44, #ef9d43, #e75516);
+    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+}
+
+.card.four {
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+}
+
+.card.five {
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.card.six {
+    background-image: linear-gradient(to right, #eb3941, #f15e64, #e14e53, #e2373f);
+    box-shadow: 0 5px 15px rgba(242, 97, 103, .4);
+}
+
+
+/* .card a {
+    font-size: 3rem;
+    text-align: center;
+} */
 
 @media (max-width: 768px) {
     .cards {

@@ -52,7 +52,7 @@ img {
     text-align: center;
 }
 
-button {
+.social {
     width: 100%;
     padding: 0.9rem;
     background-color: #02354A;
@@ -62,7 +62,7 @@ button {
     margin-bottom: 1rem;
 }
 
-.social-links button {
+.social-links .social {
     display: flex;
     justify-content: space-between;
 }

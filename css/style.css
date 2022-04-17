@@ -242,4 +242,8 @@ header .navbar {
         grid-column: 1 / 5;
         grid-row: 4;
     }
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
